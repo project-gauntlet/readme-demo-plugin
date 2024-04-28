@@ -1,8 +1,12 @@
 [gauntlet]
-name = 'Template Plugin'
+name = 'Readme Demo Plugin'
+description = "Readme Demo"
 
 [[entrypoint]]
-id = 'template-view'
-name = 'Template view'
-path = 'src/template-view.tsx'
+id = 'game-of-life'
+name = 'Game of Life'
+path = 'src/game-of-life.tsx'
 type = 'view'
+description = """
+Game of Life demo to show interactivity of Details view
+"""
