@@ -1,0 +1,24 @@
+[gauntlet]
+name = 'Readme Demo'
+description = "Readme Demo"
+
+[[entrypoint]]
+id = 'game-of-life'
+name = 'Game of Life'
+path = 'src/game-of-life.tsx'
+type = 'view'
+description = "Game of Life demo to show interactivity of Details view"
+
+[[entrypoint]]
+id = 'starwars-locations'
+name = 'StarWars Locations'
+path = 'src/starwars-locations.tsx'
+type = 'view'
+description = "StarWars Locations"
+
+[[entrypoint]]
+id = 'starwars-species'
+name = 'StarWars Species'
+path = 'src/starwars-species.tsx'
+type = 'view'
+description = "StarWars Species"
