@@ -1,6 +1,6 @@
-import {ReactElement, useEffect, useRef, useState} from 'react';
-import {Detail} from "@project-gauntlet/api/components";
-import {GameOfLife} from "gameoflife.js"
+import { ReactElement, useEffect, useRef, useState } from 'react';
+import { Detail } from "@project-gauntlet/api/components";
+import { GameOfLife } from "gameoflife.js"
 
 export default function GameOfLifeView(): ReactElement {
     const initialCell = [

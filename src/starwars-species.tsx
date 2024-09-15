@@ -1,26 +1,22 @@
-import {ReactElement} from "react";
-import {List, Detail, Action, ActionPanel} from "@project-gauntlet/api/components";
-import {useNavigation} from "@project-gauntlet/api/hooks";
+import { ReactElement } from "react";
+import { ActionPanel, Detail, List } from "@project-gauntlet/api/components";
+import { useNavigation } from "@project-gauntlet/api/hooks";
 
 export default function StarWarsSpecies(): ReactElement {
     let {pushView} = useNavigation();
 
     return (
-        <List onSelectionChange={id => {
-            if (id === "ezaraa") {
-                pushView(<Ezaraa/>)
-            }
-        }}>
-            <List.Item id="adarian" title="Adarian"/>
-            <List.Item id="aruzan" title="Aruzan"/>
-            <List.Item id="blutopian" title="Blutopian"/>
-            <List.Item id="caphex" title="Caphex"/>
-            <List.Item id="condluran" title="Condluran"/>
-            <List.Item id="frozian" title="Frozian"/>
-            <List.Item id="evereni" title="Evereni"/>
-            <List.Item id="ezaraa" title="Ezaraa"/>
-            <List.Item id="houk" title="Houk"/>
-            <List.Item id="inleshat" title="Inleshat"/>
+        <List>
+            <List.Item title="Adarian"/>
+            <List.Item title="Aruzan"/>
+            <List.Item title="Blutopian"/>
+            <List.Item title="Caphex"/>
+            <List.Item title="Condluran"/>
+            <List.Item title="Frozian"/>
+            <List.Item title="Evereni"/>
+            <List.Item title="Ezaraa" onClick={() => pushView(<Ezaraa/>)}/>
+            <List.Item title="Houk"/>
+            <List.Item title="Inleshat"/>
         </List>
     )
 }
